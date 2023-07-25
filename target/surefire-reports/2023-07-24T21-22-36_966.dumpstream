@@ -1,0 +1,5 @@
+# Created at 2023-07-24T21:22:37.607
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Personal Projects\Emplyee-management\WorkWise\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
