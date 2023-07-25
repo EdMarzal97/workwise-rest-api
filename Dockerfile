@@ -1,7 +1,7 @@
-FROM maven:3.9.0-eclipse-temurin-17-alpine
+FROM openjdk:20-alpine
 COPY . .
 RUN mvn clean package -DskipTests
 FROM openjdk:17
-COPY target/*.jar WorkWise.jar
+COPY target/*.jar WorkWiseApplication.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "WorkWise.jar"]
+ENTRYPOINT ["java", "-jar", "WorkWiseApplication.jar"]
