@@ -8,8 +8,8 @@ RUN mvn clean package -Pprod -DskipTests
 #
 # Package stage
 #
-FROM eclipse-temurin:20-jdk-slim
+FROM openjdk:20-jdk-slim
 COPY --from=build /target/*.jar WorkWise-0.0.1-SNAPSHOT.jar
 # ENV PORT=8080
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","WorkWiseApplication.jar"]
+ENTRYPOINT ["java","-jar","WorkWise-0.0.1-SNAPSHOT.jar"]
